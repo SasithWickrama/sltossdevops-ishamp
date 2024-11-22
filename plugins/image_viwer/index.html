@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Magnify</title>
+  <!-- Bootstrap -->
+
+  <link href="css/jquery.magnify.css" rel="stylesheet">
+  <link href="css/docs.css" rel="stylesheet">
+
+  <!-- <style>
+  img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  </style> -->
+
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <div>
+
+      <div class="image-set m-t-20">
+        <a data-magnify="gallery" data-src="" data-caption="Slipping Away by Jerry Fryer" data-group="a" href="https://farm1.staticflickr.com/313/31812080833_297acfbbd9_z.jpg">
+          <img src="https://farm1.staticflickr.com/313/31812080833_297acfbbd9_s.jpg" alt="">
+        </a>
+        <a data-magnify="gallery" data-src="" data-caption="Mi Fuego by albert dros" data-group="a" href="https://farm4.staticflickr.com/3804/33589584740_b0fbdcd4aa_z.jpg">
+          <img src="https://farm4.staticflickr.com/3804/33589584740_b0fbdcd4aa_s.jpg" alt="">
+        </a>
+        <a data-magnify="gallery" data-src="" data-caption="Winter Fairytale by Achim Thomae" data-group="a" href="https://farm1.staticflickr.com/470/31340603494_fb7228020d_z.jpg">
+          <img src="https://farm1.staticflickr.com/470/31340603494_fb7228020d_s.jpg" alt="">
+        </a>
+      </div>
+ 
+    </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
+  </script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.bootcss.com/prettify/r298/prettify.min.js"></script>
+  <script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/jquery.magnify.js"></script>
+  <script>
+    window.prettyPrint && prettyPrint();
+
+    var defaultOpts = {
+      draggable: true,
+      resizable: true,
+      movable: true,
+      keyboard: true,
+      title: true,
+      modalWidth: 320,
+      modalHeight: 320,
+      fixedContent: true,
+      fixedModalSize: false,
+      initMaximized: false,
+      gapThreshold: 0.02,
+      ratioThreshold: 0.1,
+      minRatio: 0.05,
+      maxRatio: 16,
+      headToolbar: ['maximize', 'close'],
+      footToolbar: ['zoomIn', 'zoomOut', 'fullscreen', 'actualSize', 'rotateRight'],
+      multiInstances: true,
+      initEvent: 'click',
+      initAnimation: true,
+      fixedModalPos: false,
+      zIndex: 1090,
+      dragHandle: '.magnify-modal',
+      progressiveLoading: true
+    };
+
+    var vm = new Vue({
+      el: '#playground',
+      data: {
+        options: defaultOpts
+      },
+      methods: {
+        changeTheme: function (e) {
+          if (e.target.value === '0') {
+            $('.magnify-theme').remove();
+          } else if (e.target.value === '1') {
+            $('.magnify-theme').remove();
+            $('head').append('<link class="magnify-theme" href="css/magnify-bezelless-theme.css" rel="stylesheet">');
+          } else if (e.target.value === '2') {
+            $('.magnify-theme').remove();
+            $('head').append('<link class="magnify-theme" href="css/magnify-white-theme.css" rel="stylesheet">');
+          }
+        }
+      },
+      updated: function () {
+        $('[data-magnify]').magnify(this.options);
+      }
+    });
+
+  </script>
+</body>
+
+</html>

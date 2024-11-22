@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1"><Document><Style id="manholeStyle"><IconStyle id="manhole"><scale>1.25</scale><Icon><href>../../assets/img/pole.png</href></Icon></IconStyle></Style><Placemark id="placemark1"><name>DW Meter Reading-FDP</name><description>&lt;!DOCTYPE html&gt;&#13;
+&lt;html&gt;&#13;
+&lt;head&gt;&#13;
+&#13;
+&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;&#13;
+&lt;script src="css/font/font-awesome.js"&gt;&lt;/script&gt;&#13;
+&#13;
+&lt;/head&gt;&#13;
+&lt;body&gt;&#13;
+&#13;
+&lt;table class="table" style="width:100%"&gt; &lt;tr&gt;&#13;
+			&lt;td&gt;&lt;b&gt;Image Name : &lt;/b&gt;&lt;/td&gt;&#13;
+			&lt;td&gt;DW Meter Reading-FDP&lt;/td&gt;&#13;
+		  &lt;/tr&gt;&#13;
+&#13;
+		&lt;tr&gt;&#13;
+		  &lt;td rowspan=2&gt;&lt;b&gt;GPS LOCATION : &lt;/b&gt;&lt;/td&gt;&#13;
+		  &lt;td&gt;Longitute:80.618761&lt;/td&gt;&#13;
+		&lt;/tr&gt;&#13;
+			&#13;
+		&lt;tr&gt;&#13;
+			&lt;td&gt;Latitude:7.3734614&lt;/td&gt;&#13;
+		&lt;/tr&gt;&#13;
+&#13;
+		&lt;/table&gt;</description><styleUrl>#manholeStyle</styleUrl><Point><coordinates>80.618761,7.3734614</coordinates></Point></Placemark></Document></kml>

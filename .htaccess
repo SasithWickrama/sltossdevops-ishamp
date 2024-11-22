@@ -1,0 +1,38 @@
+Header set Access-Control-Allow-Origin "*"
+
+Options +MultiViews
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
+RewriteEngine on
+RewriteBase /
+
+# Defines 404 error pages content:
+ErrorDocument 404 /towerspace/404.html
+
+# for all invalid links (non existing files):
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* - [L,R=404]
+
+# for some valid links (existing files to be un-accessible):
+RewriteCond %{THE_REQUEST} ^.*some_file.php.*$ [NC]
+RewriteRule .* - [L,R=404]
+
+ErrorDocument 500 /towerspace/500.html
+
+# for all invalid links (non existing files):
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* - [L,R=500]
+
+# for some valid links (existing files to be un-accessible):
+RewriteCond %{THE_REQUEST} ^.*some_file.php.*$ [NC]
+RewriteRule .* - [L,R=500]

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1"><Document><Style id="line-style-cbl"><BalloonStyle><LineStyle><color>ffff0000</color><width>4.294</width></LineStyle></BalloonStyle></Style><Placemark id="placemark1"><styleUrl>#line-style-cbl</styleUrl><description/><LineString><tessellate/><coordinates>80.7437432,7.2831763,0 80.6452191,7.3036049,0 80.6451507,7.3041746,0 ,</coordinates></LineString></Placemark></Document></kml>

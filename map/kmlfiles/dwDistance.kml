@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1"><Document><Style id="line-style-cbl"><BalloonStyle><LineStyle><color>ff0000ff</color><width>4.294</width></LineStyle></BalloonStyle></Style><Placemark id="placemark0"><styleUrl>#line-style-cbl</styleUrl><description>&lt;!DOCTYPE html&gt;&#13;
+	&lt;html&gt;&#13;
+	&lt;head&gt;&#13;
+	&lt;/head&gt;&#13;
+	&lt;body&gt;&#13;
+	&#13;
+	&lt;table class="table" style="width:100%"&gt;&lt;tr&gt;&#13;
+			&lt;td&gt;Distance&lt;/td&gt;&#13;
+			&lt;td&gt;88.8 meters&lt;/td&gt;&#13;
+		&lt;/tr&gt;&lt;/table&gt;&#13;
+	&#13;
+	&lt;/body&gt;&#13;
+	&lt;/html&gt;</description><LineString><tessellate/><coordinates>79.9733558,6.7339611,0  79.9726894,6.7335148</coordinates></LineString></Placemark></Document></kml>
